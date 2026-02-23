@@ -22,17 +22,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Bw-khM">
+                                <rect key="frame" x="120" y="299" width="153" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CLJ-iO-MZC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Cick Me"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZhR-Bw-khM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Bda-jk-ut8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o6-mD-gKE" secondAttribute="trailing" constant="120" id="V7F-wk-fZM"/>
+                            <constraint firstItem="ZhR-Bw-khM" firstAttribute="top" secondItem="6o6-mD-gKE" secondAttribute="bottom" constant="150" id="duu-s1-iQj"/>
                             <constraint firstItem="6o6-mD-gKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="fti-4e-b4Y"/>
                             <constraint firstItem="6o6-mD-gKE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="h2g-0T-6a1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6o6-mD-gKE" secondAttribute="bottom" constant="635" id="yy8-0U-roh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhR-Bw-khM" secondAttribute="trailing" constant="120" id="sJI-9X-dIp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="MyButton" destination="ZhR-Bw-khM" id="ezU-8K-GAS"/>
                         <outlet property="MyLabel" destination="6o6-mD-gKE" id="RGO-6v-XUM"/>
                     </connections>
                 </viewController>
