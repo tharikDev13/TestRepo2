@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var MyLabel: UILabel!
     
+    @IBOutlet weak var MyLabel2: UILabel!
     @IBOutlet weak var MyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
         MyButton.layer.cornerRadius = 20
         // BLE: Fix background auto reconnect issue
         // Done some changes
+        
+        MyLabel2.textColor = .blue
         
     }
 
