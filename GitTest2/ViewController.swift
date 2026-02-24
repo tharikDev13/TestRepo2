@@ -14,11 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var MyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
         MyLabel.textColor = .red
         MyButton.tintColor = .red
         MyButton.titleLabel?.textColor = .black
+        
+        // BLE: Fix background auto reconnect issue
+        
     }
 
 
