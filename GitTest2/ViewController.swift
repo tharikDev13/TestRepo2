@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         MyLabel.textColor = .red
         MyButton.tintColor = .red
         MyButton.titleLabel?.textColor = .black
-        
+        MyButton.layer.cornerRadius = 20
         // BLE: Fix background auto reconnect issue
         
     }
